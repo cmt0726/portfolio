@@ -16,16 +16,17 @@
     <body>
         <header>
             <div class="logo">
-                <img src="images/topleft.webp" alt="An image of myself">
+                
+                <img src="images/logo.png" alt="An image of myself">
             </div>
             <button class=nav-toggle aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,45 +39,44 @@
             <p class="section__subtitle section__subtitle--intro">
                 Full time student
             </p>
-            <img src="images/profile.jpeg" alt="Image of myself" class="intro__img">
+            <img src="images/me.jpg" alt="Image of myself" class="intro__img">
         </section>
-
+      
         <!--About Me-->
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">About Me</h2>
-            <p class="section__subtitle section__subtitle--about">Stuff describing me</p>
+            <p class="section__subtitle section__subtitle--about">Who I am</p>
 
             <div class="about-me__body">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sed eum distinctio eveniet aliquam porro corrupti omnis corporis modi consequuntur obcaecati facilis fugit exercitationem animi, vero atque quo ducimus expedita!</p>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quaerat architecto cumque pariatur quam non nulla consequatur. Aliquid enim et repellat? Necessitatibus fuga quis facilis, natus in aliquam distinctio excepturi.</p>
+                <p class="about-me__state" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sed eum distinctio eveniet aliquam porro corrupti omnis corporis modi consequuntur obcaecati facilis fugit exercitationem animi, vero atque quo ducimus expedita!</p>
+                <p class="about-me__state"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam quaerat architecto cumque pariatur quam non nulla consequatur. Aliquid enim et repellat? Necessitatibus fuga quis facilis, natus in aliquam distinctio excepturi.</p>
             </div>
 
-            <img src="" alt="">
-            <a href="#work" class="btn">My Projects</a>
+            <img src="images/me.jpg" alt="" class="about-me__img">
+            <!-- <a href="#work" class="btn">My Projects</a> -->
         </section>
 
-
+       
         <!--Projects-->
         <section class="my-projects" id="work">
             <h2 class="section__title">My Projects</h2>
-            <p class="section__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, totam quaerat. Eum non soluta reprehenderit, aperiam architecto porro quam veniam ipsum ad quisquam, explicabo facilis quas earum molestias qui cupiditate!</p>
+            
 
             <div class="portfolio">
-                <a href="" class="portfolio__item">
-                    <img src="" alt="" class="portfolio__img">
+                <a href="https://gitlab.cs.wwu.edu/cs345_21wi/team_constrictor_345-21wi/-/tree/master" class="portfolio__item">
+                    <figure>
+                    <img src="images/boardgame.PNG" alt="" class="portfolio__img">
+                    </figure>
                 </a>
             </div>
         </section>
 
         <!--Footer-->
-        <footer>
+        <footer class="footer">
             <a href="mailto:connorteige@gmail.com" class="footer__link">connorteige@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item"><a href="" class="social--list__link">a</a></li>
-                <li class="social-list__item"><a href="" class="social--list__link">b</a></li>
-                <li class="social-list__item"><a href="" class="social--list__link">c</a></li>
-                <li class="social-list__item"><a href="" class="social--list__link">d</a></li>
-            </ul>
+            
         </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>
