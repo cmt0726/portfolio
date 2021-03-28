@@ -103,6 +103,7 @@ h3 {
 
 .section__subtitle {
     margin: 0;
+    padding: 0;
     font-size: var(--fs-h3);
     box-shadow: var(--bs); 
 }
@@ -263,11 +264,22 @@ nav {
     transform: translate(-50%, -50%);
 	opacity: 0;
 }
-
-.portfolio__img {
-    max-height: 95%;
-    max-width: 95%;
-    box-shadow: var(--bs);
+@media (min-width: 1000px){
+    :root {
+        --fs-h1: 5.5rem;
+        --fs-h2: 4.58rem;
+        --fs-h3: 1.832rem;
+        --fs-body: 1.374rem;
+    }
+    .portfolio__img {
+        max-height: 80%;
+        max-width: 80%;
+        box-shadow: var(--bs);
+    }
+    section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
     
 
@@ -334,10 +346,20 @@ nav {
     }
 }
 
-.about-me {
+figure {
+    max-width: 400px;
+}
+
+.portfolio__tag, .portfolio__item{
+    text-decoration: none;
+    color: var(--clr-dark);
+    text-align: center;
+    opacity: .7;
+}
+/* .about-me {
     
     margin: 0 auto;
-}
+} */
 
 .about-me__img {
     box-shadow: var(--bs);
@@ -353,12 +375,13 @@ nav {
 @media (min-width: 600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr;
         grid-template-areas: 
             "title img"
             "text img"
             "subtitle img";
         grid-column-gap: 2em;
+        grid-row-gap: 1em;
     }
 
     .about-me__state {
@@ -368,10 +391,11 @@ nav {
 
     .section__title--about {
         grid-area: title;
+        
     }
 
     .section__subtitle--about {
-        grid-column: 1 / -2;
+        grid-column: 1 / -1;
     }
 
     .about-me__img {
@@ -383,6 +407,12 @@ nav {
         padding: 2em 2em;
         
     }
+
+    .portfolio__img {
+        max-height: 400px;
+        max-width: 400px;
+    }
+    
 }
 
 .footer {
